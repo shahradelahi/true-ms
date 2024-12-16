@@ -3,6 +3,14 @@
   "version": "0.0.0",
   "private": false,
   "description": "A Millisecond conversion utility with true precision",
+  "keywords": [
+    "ms",
+    "milliseconds",
+    "conversion",
+    "time",
+    "duration",
+    "utility"
+  ],
   "homepage": "https://github.com/shahradelahi/true-ms",
   "repository": "github:shahradelahi/true-ms",
   "license": "MIT",
