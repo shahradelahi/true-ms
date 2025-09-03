@@ -4,7 +4,7 @@ describe('parse(string)', () => {
   it('should not throw an error', () => {
     expect(() => {
       parse('1m');
-    }).not.toThrowError();
+    }).not.toThrow();
   });
 
   it('should preserve ms', () => {
@@ -81,7 +81,7 @@ describe('parse(long string)', () => {
   it('should not throw an error', () => {
     expect(() => {
       parse('53 milliseconds');
-    }).not.toThrowError();
+    }).not.toThrow();
   });
 
   it('should convert milliseconds to ms', () => {
@@ -139,55 +139,55 @@ describe('parse(invalid inputs)', () => {
   it('should throw an error, when parse("")', () => {
     expect(() => {
       parse('');
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when parse(undefined)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       parse(undefined);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when parse(null)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       parse(null);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when parse([])', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       parse([]);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when parse({})', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       parse({});
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when parse(NaN)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       parse(NaN);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when parse(Infinity)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       parse(Infinity);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when parse(-Infinity)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       parse(-Infinity);
-    }).toThrowError();
+    }).toThrow();
   });
 });
