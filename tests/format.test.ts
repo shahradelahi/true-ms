@@ -6,7 +6,7 @@ describe('format(number, { long: true })', () => {
   it('should not throw an error', () => {
     expect(() => {
       format(500, { long: true });
-    }).not.toThrowError();
+    }).not.toThrow();
   });
 
   it('should support milliseconds', () => {
@@ -68,7 +68,7 @@ describe('format(number)', () => {
   it('should not throw an error', () => {
     expect(() => {
       format(500);
-    }).not.toThrowError();
+    }).not.toThrow();
   });
 
   it('should support milliseconds', () => {
@@ -123,52 +123,52 @@ describe('format(invalid inputs)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       format('');
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when format(undefined)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       format(undefined);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when format(null)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       format(null);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when format([])', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       format([]);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when format({})', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       format({});
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when format(NaN)', () => {
     expect(() => {
       format(NaN);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when format(Infinity)', () => {
     expect(() => {
       format(Infinity);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when format(-Infinity)', () => {
     expect(() => {
       format(-Infinity);
-    }).toThrowError();
+    }).toThrow();
   });
 });

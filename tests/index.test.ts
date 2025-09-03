@@ -4,7 +4,7 @@ describe('ms(string)', () => {
   it('should not throw an error', () => {
     expect(() => {
       ms('1m');
-    }).not.toThrowError();
+    }).not.toThrow();
   });
 
   it('should preserve ms', () => {
@@ -106,7 +106,7 @@ describe('ms(long string)', () => {
   it('should not throw an error', () => {
     expect(() => {
       ms('53 milliseconds');
-    }).not.toThrowError();
+    }).not.toThrow();
   });
 
   it('should convert milliseconds to ms', () => {
@@ -164,7 +164,7 @@ describe('ms(number, { long: true })', () => {
   it('should not throw an error', () => {
     expect(() => {
       ms(500, { long: true });
-    }).not.toThrowError();
+    }).not.toThrow();
   });
 
   it('should support milliseconds', () => {
@@ -226,7 +226,7 @@ describe('ms(number)', () => {
   it('should not throw an error', () => {
     expect(() => {
       ms(500);
-    }).not.toThrowError();
+    }).not.toThrow();
   });
 
   it('should support milliseconds', () => {
@@ -281,45 +281,45 @@ describe('ms(invalid inputs)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       ms('');
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when ms(undefined)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       ms(undefined);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when ms(null)', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       ms(null);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when ms([])', () => {
     expect(() => {
       // @ts-expect-error - We expect this to throw.
       ms([]);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when ms(NaN)', () => {
     expect(() => {
       ms(NaN);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when ms(Infinity)', () => {
     expect(() => {
       ms(Infinity);
-    }).toThrowError();
+    }).toThrow();
   });
 
   it('should throw an error, when ms(-Infinity)', () => {
     expect(() => {
       ms(-Infinity);
-    }).toThrowError();
+    }).toThrow();
   });
 });
