@@ -55,7 +55,7 @@
     "@edge-runtime/jest-environment": "4.0.0",
     "@shahrad/eslint-config": "1.0.1",
     "@shahrad/prettier-config": "1.2.2",
-    "@shahrad/tsconfig": "1.2.0",
+    "@shahrad/tsconfig": "2.0.0",
     "@types/jest": "30.0.0",
     "@types/luxon": "3.7.1",
     "eslint": "9.34.0",
