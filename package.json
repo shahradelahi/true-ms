@@ -49,23 +49,23 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "luxon": "3.7.1"
+    "luxon": "3.7.2"
   },
   "devDependencies": {
     "@edge-runtime/jest-environment": "4.0.0",
-    "@shahrad/eslint-config": "1.0.1",
+    "@shahrad/eslint-config": "1.1.0",
     "@shahrad/prettier-config": "1.2.2",
-    "@shahrad/tsconfig": "1.2.0",
+    "@shahrad/tsconfig": "1.3.0",
     "@types/jest": "30.0.0",
-    "@types/luxon": "3.7.1",
-    "eslint": "9.34.0",
-    "jest": "30.0.4",
-    "prettier": "3.6.2",
-    "ts-jest": "29.4.0",
-    "tsup": "8.5.0",
-    "typescript": "5.9.2"
+    "@types/luxon": "3.7.5",
+    "eslint": "9.39.5",
+    "jest": "30.5.1",
+    "prettier": "3.9.6",
+    "ts-jest": "29.4.12",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67",
+  "packageManager": "pnpm@10.34.5",
   "publishConfig": {
     "access": "public",
     "provenance": true
